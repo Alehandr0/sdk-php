@@ -222,6 +222,7 @@ class LiqPay
 		$from_data = str_replace(":", "=>", $from_data);
 		$from_data = strtr($from_data, "{}", "()");
 		eval("\$result = array $from_data;");
-	return $result;
+
+		return $result;
 	}
 }
