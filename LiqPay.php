@@ -206,4 +206,19 @@ class LiqPay
         return $signature;
     }
 
+	/**
+	* decoder
+	*
+	* @param string $from_data
+	*
+	* @return array string
+	*/
+	public function decoder($from_data)
+	{
+		$from_data=base64_decode($from_data);
+		$from_data=str_replace(":", "=>", $from_data);
+		$from_data=strtr($from_data, "{}", "()");
+		eval("\$result = array $from_data;");
+	return $result;
+	}
 }
