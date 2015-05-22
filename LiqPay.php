@@ -208,7 +208,7 @@ class LiqPay
 
 	/**
 	* функция расшифровывает полученные с сервера данные:
-	* $_POST[data] ( описанные https://www.liqpay.com/ru/doc#callback ) - в удобочитаемый архив.
+	* * $_POST[data] ( описанные по адресу - https://www.liqpay.com/ru/doc#callback - в удобочитаемый архив )
 	*
 	* decoder
 	*
