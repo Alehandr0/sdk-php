@@ -1,6 +1,6 @@
 <?
 /**
-* Исходник взят 2015.05.21 с ресурса : https://github.com/liqpay/sdk-php/blob/master/LiqPay.php
+* Исходник взят 2015.05.21 с ресурса : https://github.com/Alehandr0/sdk-php/blob/master/LiqPay.php
 *
 * Liqpay Payment Module
 *
