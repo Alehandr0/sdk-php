@@ -28,7 +28,7 @@
 class LiqPay
 {
 	private $_api_url = 'https://www.liqpay.com/api/';
-	private $_checkout_url = 'https://www.liqpay.com/api/3/checkout';
+	private $_checkout_url = 'https://www.liqpay.com/api/checkout';
 	protected $_supportedCurrencies = array ('EUR','UAH','USD','RUB','RUR');
 	private $_public_key;
 	private $_private_key;
