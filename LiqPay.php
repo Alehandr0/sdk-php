@@ -68,7 +68,7 @@ class LiqPay
 		}
 		$url			= $this->_api_url . $path;
 		$public_key		= $this->_public_key;
-		$private_key	= $this->_private_key;        
+		$private_key		= $this->_private_key;        
 		$data			= base64_encode(json_encode(array_merge(compact('public_key'), $params)));
 		$signature		= base64_encode(sha1($private_key.$data.$private_key, 1));
 		$postfields		= http_build_query(array(
@@ -127,7 +127,7 @@ $language);
 	public function cnb_signature($params)
 	{
 		$params			= $this->cnb_params($params);
-		$private_key	= $this->_private_key;
+		$private_key		= $this->_private_key;
 		$json			= base64_encode(json_encode($params));
 		$signature		= $this->str_to_sign($private_key . $json . $private_key);
 		return $signature;
